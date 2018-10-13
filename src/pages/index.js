@@ -1,15 +1,28 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
-import Layout from '../components/layout'
+import {Center, Font, Blink, Marquee, Tile, GradationText, Rotator} from 'dasa'
+import GIMG from '../images/gatsby-icon.png'
+import '../globalStyles/global.css'
+import '../globalStyles/reset.css'
 
 const IndexPage = () => (
-  <Layout>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+  <Tile image={GIMG} isGlobal={true}>
+  <Blink><Rotator><Font size={48}>WELCOME</Font></Rotator></Blink>
+    <Center horizontal={true}>
+    <GradationText
+      fontSize={96}
+      colorArray={["red", "blue", "green"]}
+      isAnimate={true}
+    >
+      DASA
+    </GradationText>
+    </Center>
+      
+      
+      <Marquee>
+        <Font color='red'>Internet Explorerでは動作しません</Font>
+      </Marquee>
+  </Tile>
 )
 
 export default IndexPage
