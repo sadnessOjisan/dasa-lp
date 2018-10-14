@@ -41,6 +41,22 @@ const IndexPage = () => (
     </Marquee>
     <br />
     <br />
+    <br />
+    <Marquee>
+      <Font color="red" size={36}>
+        ⚠️モバイルで動く気配がないです。
+      </Font>
+    </Marquee>
+    <br />
+    <br />
+    <br />
+    <Marquee>
+      <Font color="red" size={36}>
+        というよりPCのクローム以外で動く気配がないです。
+      </Font>
+    </Marquee>
+    <br />
+    <br />
     <Title.H2 backgroundColor={Color.Vivid.blue}>DASAとは何か</Title.H2>
     <Area backgroundColor={Color.Pastel.white}>
       <br />
